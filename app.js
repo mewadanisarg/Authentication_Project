@@ -160,6 +160,7 @@ app.post("/submit", (req, res) => {
       });
   });
 
+  // Register route
 app.post("/register", (req,res)=>{
     User.register({username: req.body.username}, req.body.password, (err, user)=>{
         if (err) {
